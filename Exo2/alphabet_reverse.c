@@ -4,11 +4,15 @@
 void ft_print_alphabet(void){
 
     char lettre = 'z';
+    int count = 0; 
 
-    for (int cb = 0; lettre <= 'a'; cb--){
+    while (count != 26)
+    {
         putchar(lettre);
+        count++;
+        lettre--;
     }
-    putchar('\n');
+    
 }
 
 int main() {
